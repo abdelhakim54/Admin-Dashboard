@@ -1,5 +1,6 @@
 :root{
     font-size: 32px;
+    font-family: 'Roboto';
 }
 
 *{
@@ -9,9 +10,10 @@
 }
 
 div.main-container{
-    text-align: center;
+    font-size: 0.7rem;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: 100vh;
 }
 
 div.header{
@@ -19,11 +21,62 @@ div.header{
     grid-column: 2 / 3;
 }
 
+
+/*side-bar style*/
 div.side-bar{
+    min-width: 200px;
+    color: white;
+    padding: 10px;
     grid-row: 1 / 4;
-    background-color: blue;
+    background-color: #155e75;
+    display: grid;
+    grid-template-rows: 50px 300px 120px;
+    gap: 50px;
 }
+
+div.side-bar  a{
+    color: white;
+    text-decoration: none;
+    align-self: center;
+}
+
+div.side-bar ul{
+    display: grid;
+    gap: 10px;
+}
+
+div.side-bar li{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+}
+
+div.dashboard-logo{
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+}
+
+div.dashboard-logo figcaption{
+    align-self: center;
+}
+
+div.dashboard-logo img{
+    width: 40px;
+    align-self: center;
+    justify-self: end;
+}
+
+div.side-bar ul img{
+    width: 24px;
+    align-self: center;
+    justify-self: end;
+}
+
 
 div.main-content{
     background:grey;
 }
+
