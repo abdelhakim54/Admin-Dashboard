@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
 :root{
     font-size: 32px;
     font-family: 'Roboto';
@@ -6,11 +11,10 @@
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid black;
 }
 
 div.main-container{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 100vh;
@@ -53,10 +57,10 @@ div.side-bar li{
 
 div.dashboard-logo{
     font-size: 1.2rem;
-    font-weight: bold;
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 20px;
+    padding-top: 10px;
 }
 
 div.dashboard-logo figcaption{
