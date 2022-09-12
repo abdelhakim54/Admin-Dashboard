@@ -1,0 +1,29 @@
+:root{
+    font-size: 32px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+div.main-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+div.header{
+    background-color: wheat;
+    grid-column: 2 / 3;
+}
+
+div.side-bar{
+    grid-row: 1 / 4;
+    background-color: blue;
+}
+
+div.main-content{
+    background:grey;
+}
