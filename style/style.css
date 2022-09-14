@@ -21,18 +21,65 @@ div.main-container{
 }
 
 div.header{
-    background-color: wheat;
     grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4px;
+    padding: 4px 30px ;
 }
 
+div.header > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+div.header div div{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 4px;
+}
+
+div.header .first input[type="search"]{
+    width: 400px;
+    height: 24px;
+    border-radius: 6px;
+    background-color: #f1f5f9;
+    border-color: #f1f5f9;
+
+}
+
+div.header .second button{
+    padding: 8px 16px;
+    background-color: #0284c7;
+    color: white;
+    border-radius: 16px;
+    width: 70px;
+    border-color: white;
+    
+}
+
+div.header #wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+#wrap > :first-child{
+    font-size: 0.4rem;
+    font-weight: lighter;
+}
 
 /*side-bar style*/
 div.side-bar{
-    min-width: 200px;
+    min-width: 250px;
     color: white;
     padding: 10px;
     grid-row: 1 / 4;
-    background-color: #155e75;
+    background-color: #0284c7;
     display: grid;
     grid-template-rows: 50px 300px 120px;
     gap: 50px;
@@ -73,12 +120,12 @@ div.dashboard-logo img{
     justify-self: end;
 }
 
-div.side-bar ul img{
+.small {
     width: 24px;
     align-self: center;
     justify-self: end;
 }
-
+/*side bar is done*/
 
 div.main-content{
     background:grey;
