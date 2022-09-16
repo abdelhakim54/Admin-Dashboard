@@ -10,5 +10,5 @@ this project was built by [me](https://github.com/abdelhakim54) entirely in the 
 ![desired outcome](designFile.png)
 
 > ## note
-> you can try to build this project as well,
-> you find the icons used in this project in the icons/ directory
+> * you can try to build this project as well,
+> * you find the icons used in this project in the icons/ directory
